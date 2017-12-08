@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Psychic Game</title>
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/reset" href="assets/css/reset.css">
+    
+</head>
+    
+<body>
+
+    <div class="game">
+            <h1>The Psychic Game</h1>
+            <br>
+            <p>Guess what letter I'm thinking</p>
+            <br>
+            <p>Wins:</p>
+            <br>
+            <p>Losses:</p>
+            <br>
+            <p>Guesses Left:</p>
+            <br>
+            <p>Your Guesses so far:</p>
+    </div>
+    
+    <script type="text/javascript">
+
+    var emptyString = "";
+    var alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+    while (emptyString.length < 6) {
+        emptyString += alphabet[Math.floor(Math.random() * alphabet.length)];
+    } 
+    console.log(emptyString);
+
+        document.onkeyup = function(event) {
+            var keyPress = event.key;
+             console.log(event.key);
+
+            if (keyPress === "h"){
+                 car.honk();
+                 logCarData();
+            }
+
+            if (keyPress === "d"){
+                car.driveToWork();
+            }
+
+            if (keyPress === "w"){
+                car.driveAroundWorld();
+            }
+
+            if (keyPress === "t"){
+                 car.getTuneUp();
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>
