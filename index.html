@@ -8,6 +8,7 @@
     
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/reset" href="assets/css/reset.css">
+    <script type="assets/javascript/game.js"></script>
     
 </head>
     
@@ -26,40 +27,6 @@
             <br>
             <p>Your Guesses so far:</p>
     </div>
-    
-    <script type="text/javascript">
-
-    var emptyString = "";
-    var alphabet = "abcdefghijklmnopqrstuvwxyz";
-
-    while (emptyString.length < 6) {
-        emptyString += alphabet[Math.floor(Math.random() * alphabet.length)];
-    } 
-    console.log(emptyString);
-
-        document.onkeyup = function(event) {
-            var keyPress = event.key;
-             console.log(event.key);
-
-            if (keyPress === "h"){
-                 car.honk();
-                 logCarData();
-            }
-
-            if (keyPress === "d"){
-                car.driveToWork();
-            }
-
-            if (keyPress === "w"){
-                car.driveAroundWorld();
-            }
-
-            if (keyPress === "t"){
-                 car.getTuneUp();
-            }
-        }
-
-    </script>
 
 
 </body>
