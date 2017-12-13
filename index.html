@@ -36,18 +36,23 @@
             var guessesLeft = document.getElementById("guesses-left");
             var guessesSoFar = document.getElementById("yourGuessSofar");
             document.onkeyup = function(event) {
-                if (event.key ==="l" || event.key === "u" || event.key === "c" || event.key === "a" || event.key === "s"){
+                // if (event.key ==="l" || event.key === "u" || event.key === "c" || event.key === "a" || event.key === "s"){
+                // if(correctLetters.indexOf(event.key)>=0){
                     userText.textContent = event.key;
-                    compText.textContent = correctLetters[Math.floor(Math.random() * 5)];  
+                    // compText.textContent = correctLetters[Math.floor(Math.random() * 4)];  
               
-
-              if(userText.textContent === incorrectChoices){
-                lossText.textContent++;
-              }
-              else if(compText.textContent ===correctLetters){
-                winText.textContent++;
+// index of
+                    console.log(incorrectChoices.indexOf(event.key)>=0)
+                    console.log(event.key)
+                    if(incorrectChoices.indexOf(event.key)>=0){
+                        lossText.textContent++;
+                    }
+                    else{
+                        winText.textContent++;
+                        console.log("b");
               }
             }
+        
          </script>
 
     </body>
