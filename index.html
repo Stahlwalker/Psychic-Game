@@ -8,8 +8,7 @@
     
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/reset" href="assets/css/reset.css">
-    <!-- <script type="text/javascript" src="assets/javascript/game.js"></script> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> -->
+    
 </head>
     
 <body>
@@ -26,34 +25,7 @@
               <h2>Guesses Left: <span id="guesses-left"><strong>0</strong></span></h2>
               <h2>Your Guess so far: <span id="yourGuessSoFar"><strong>0</strong></span></h2>
     </div>
-           
-        <script type="text/javascript">
-            var incorrectChoices = ["b", "d", "e", "f", "g", "h", "i", "j", "k", "m", "n", "o", "p", "q", "r", "t", "v", "w", "x", "y", "z"];
-            var correctLetters = ["l", "u", "c", "a", "s"];
-            var userText = document.getElementById("user-text");
-            var winText = document.getElementById("win-count");
-            var lossText = document.getElementById("loss-count");
-            var guessesLeft = document.getElementById("guesses-left");
-            var guessesSoFar = document.getElementById("yourGuessSofar");
-            document.onkeyup = function(event) {
-                // if (event.key ==="l" || event.key === "u" || event.key === "c" || event.key === "a" || event.key === "s"){
-                // if(correctLetters.indexOf(event.key)>=0){
-                    userText.textContent = event.key;
-                    // compText.textContent = correctLetters[Math.floor(Math.random() * 4)];  
-              
-// index of
-                    console.log(incorrectChoices.indexOf(event.key)>=0)
-                    console.log(event.key)
-                    if(incorrectChoices.indexOf(event.key)>=0){
-                        lossText.textContent++;
-                    }
-                    else{
-                        winText.textContent++;
-                        console.log("b");
-              }
-            }
-        
-         </script>
 
     </body>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </html>
