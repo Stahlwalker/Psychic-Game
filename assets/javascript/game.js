@@ -8,6 +8,7 @@ var lossText = document.getElementById("loss-count");
 var guessesLeft = document.getElementById("guesses-left");
 var guessesSoFar = document.getElementById("yourGuessSofar");
 var guesses = 9;
+var guessCount = 0;
 document.onkeyup = function(event) {
         userText.textContent = event.key;
 // index of
@@ -29,4 +30,4 @@ document.onkeyup = function(event) {
 function ClearFields() {
     
          document.getElementById('guesses-left').value = "";
-    }
+}
