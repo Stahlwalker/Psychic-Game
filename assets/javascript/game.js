@@ -26,6 +26,10 @@ document.onkeyup = function(event) {
   }
 
 
+  //create a guess count
+
+  // create how many guesses left
+
 /* Clear/Reset the text field */    
 function ClearFields() {
     
